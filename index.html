@@ -7,64 +7,58 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Employee Directory</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class= "container">
   <header>
     <div class="hcontainer">
       <h1>Employee Directory</h1>
     </div>
-  </header>    
-    
-  <section> 
-    
-    <nav class="sidebar">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" id= "showNames">All</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id= "addName">Add</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id= "verifyName">Verify</a>
-        </li>         
-      </ul>
-    </nav>
-    <div class= "pagecontainer" id= "empList">page1</div>
-    <div class= "pagecontainer" id= "addEmp">page2</div>
-    <div class= "pagecontainer" id= "verifyEmp">page3</div>
-      
- 
-
-
-
-
-  </section> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </header>
   
+<body>
+  <section>
+    <body class="container">
+      <main class="row">
+        <div class="col-2">
+          <nav class="nav flex-column">
+            <li class="nav-item">
+              <a id="showNames" class="nav-link" href="">All</a>
+            </li>
+            <li class="nav-item">
+              <a id="addName" class="nav-link" href="">Add</a>
+            </li>
+            <li>
+            <li class="nav-item">
+              <a id="verifyName" class="nav-link" href="">Verify</a>
+            </li>
+            <li class="nav-item">
+              <a id="updateName" class="nav-link" href="">Update</a>
+            </li>
+            <li class="nav-item">
+              <a id="deleteName" class="nav-link" href="">Delete</a>
+            </li>
+          </nav>
+        </div>
+      </main>
+    </body>
+    <div class="pagecontainer" id="empList">page1</div>
+    <div class="pagecontainer" id="addEmp">page2</div>
+    <div class="pagecontainer" id="verifyEmp">page3</div>
+
+
+
+
+
+
+  </section>
+
+
+
   <script src="dom.js"></script>
   <script src="employeeList.js"></script>
   <script src="app.js"></script>

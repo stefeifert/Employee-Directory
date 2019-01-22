@@ -1,7 +1,7 @@
 $(".pagecontainer").addClass("hidden");
 
 
-const showAll = function(){
+const showNames = function(){
     $(".pagecontainer").addClass("hidden");
     $("#empList").removeClass("hidden");
 };
