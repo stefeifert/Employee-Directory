@@ -3,7 +3,7 @@ let command = "";
 const print = function() {
     let htmlStr = '';
     for (let i = 0; i < employeeList.length; i++) {
-        htmlStr += '<div class="entry"><p> ${employeeList[i].name}</p> ${employeeList[i].officeNum}</p><p> $employeeList[i].phoneNum}</p></div>';
+        htmlStr += `<div class="card"><p> ${employeeList[i].name}</p> ${employeeList[i].officeNum}</p><p> ${employeeList[i].phoneNum}</p></div>`;
         }
     render(htmlStr);
 }
@@ -24,21 +24,26 @@ const update = function() {
     const userName = $('#name').val();
     const officeNum = $('#office').val();
     const phoneNum = $('#phone').val();
+    // let htmlStr = `<div class="card"><h5> No ${userName} Does Not Exists</h5>`;
     for (let i = 0; i < employeeList.length; i++) {
         if (employeeList[i].name === userName) {
-        employeeList[i].officeNum = officeNum;
-        employeelist[i].phoneNum = phoneNum;    
+            employeeList[i].officeNum = officeNum;
+            employeeList[i].phoneNum = phoneNum;
+        }else{
+            // console.log(htmlStr)
         }
-    }        
+    } 
+    // render(htmlStr); 
+    // console.log(htmlStr);     
     print();    
 }
 
 const verify = function() {
     const userName = $('#name').val();
-    let htmlStr = 'no';
+    let htmlStr = `<div class="card"><h5> No ${userName} Does Not Exists</h5>`;
     for (let i = 0; i < employeeList.length; i++) { 
         if (employeeList[i].name === userName) {
-            htmlStr = 'yes';
+            htmlStr = `<div class="card verify"><h5> ${employeeList[i].name} exists</h5>`;
         }
     }
     render(htmlStr);
@@ -47,7 +52,7 @@ const verify = function() {
 const remove = function() {
     const userName = $('#name').val();
     for (let i = 0; i < employeeList.length; i++) {
-        if (employeeList[i].name === username) {
+        if (employeeList[i].name === userName) {
             employeeList.splice(i, 1);
         }
     }
@@ -65,7 +70,7 @@ const runCommand = function(event) {
             verify();
             break;
         case 'update':
-            PaymentRequestUpdateEvent();
+            update();
             break;
         case 'delete':
             remove();

@@ -1,5 +1,39 @@
-#submitBtn {
-    width: 100%;
+ul {
+    background-color: black;
+    padding: 50px;
+    /* margin: 10px; */
+}
+li {
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+    
+.fa-address-book {
+    color: white;
+}
+
+.span {
+    margin-left: 100px;
+}
+.icon-span {
+    /* position: relative;
+    left: 10px; */
+    margin-left: 120px;
+}
+.card {
+    width: 30%;
+    margin: 10px 5px 5px 0px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    
+}
+
+#list {
+    border: black solid 2px;
+    margin: 10px;
+    
 }
 
 
