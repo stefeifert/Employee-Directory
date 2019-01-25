@@ -1,14 +1,5 @@
-.hidden {
-    display: none;
-} 
-.hcontainer {
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16pt;
-}
-.nav-link {
-    color: black;
-    list-style-type: circle;
+#submitBtn {
+    width: 100%;
 }
 
 

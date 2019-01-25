@@ -11,54 +11,39 @@
     crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
-
 </head>
 
-  <header>
-    <div class="hcontainer">
-      <h1>Employee Directory</h1>
-    </div>
-  </header>
-  
 <body>
-  <section>
-    <body class="container">
-      <main class="row">
-        <div class="col-2">
-          <nav class="nav flex-column">
-            <li class="nav-item">
-              <a id="showNames" class="nav-link" href="">All</a>
-            </li>
-            <li class="nav-item">
-              <a id="addName" class="nav-link" href="">Add</a>
-            </li>
-            <li>
-            <li class="nav-item">
-              <a id="verifyName" class="nav-link" href="">Verify</a>
-            </li>
-            <li class="nav-item">
-              <a id="updateName" class="nav-link" href="">Update</a>
-            </li>
-            <li class="nav-item">
-              <a id="deleteName" class="nav-link" href="">Delete</a>
-            </li>
-          </nav>
+    <div class="container">      
+      <div class="row">
+        <nav class="col-md-2">
+          <i class="address book">
+          <ul>
+            <li id="view">View</li>
+            <li id="add">Add</li>
+            <li id="verify">Verify</li>
+            <li id="update">Update</li>
+            <li id="delete">Delete</li>
+          </ul>
+        </nav>
+        <div class="col-md-2 content">
+          <form>
+            <div class="wrapper">      
+              <div class= "extra inputs">
+                  <input id="name" placeholder="Employee Name" />
+                  <input id="phone" placeholder="Phone Number" />
+                  <input id="office" placeholder="Office Phone" />
+              </div>
+              <button id=submitBtn>Submit</button>
+                
+            
+            </div>
+          </form>
+          <div id="employeeList"></div>
         </div>
-      </main>
-    </body>
-    <div class="pagecontainer" id="empList">page1</div>
-    <div class="pagecontainer" id="addEmp">page2</div>
-    <div class="pagecontainer" id="verifyEmp">page3</div>
-
-
-
-
-
-
-  </section>
-
-
-
+      </div>
+    </div>
+  
   <script src="dom.js"></script>
   <script src="employeeList.js"></script>
   <script src="app.js"></script>
